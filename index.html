@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   maximum-scale=1.0,
+                   user-scalable=no">
+
+    <title>My Intentions With You — Chapter II</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Magical Background -->
+    <div class="stars"></div>
+    <div id="particles"></div>
+
+
+    <!-- ==========================================
+         ROTATE PHONE SCREEN
+    =========================================== -->
+
+    <div id="rotateScreen">
+
+        <div class="rotate-box">
+
+            <div class="rotate-icon">📱</div>
+
+            <h1>
+                🌙 The Pages Of This Tale Are Wider Than Usual...
+            </h1>
+
+            <p>
+                This chapter of our fairytale was written
+                in a wider kingdom.
+                Turn your little window sideways
+                and enter the story in
+                <b>landscape mode</b>. ✨
+            </p>
+
+            <br>
+
+            <p>
+                📱 Rotate your phone to landscape
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         MAIN APP
+    =========================================== -->
+
+    <div id="app">
+
+        <div class="main-card">
+
+
+            <!-- ======================================
+                 CHAPTER I REMINDER
+            ======================================= -->
+
+            <section id="introScreen"
+                     class="screen intro-screen">
+
+                <div class="intro-content">
+
+                    <div class="small-magic">
+                        ✨ Before The Next Chapter Begins ✨
+                    </div>
+
+                    <h1>
+                        There Is A Little Story<br>
+                        That Came Before This One
+                    </h1>
+
+                    <h2>
+                        👑 Chapter I awaits in another little kingdom...
+                    </h2>
+
+                    <p class="intro-text">
+
+                        Once upon a time,
+                        two hearts began writing
+                        a beautiful story.
+
+                        <br><br>
+
+                        Before you enter this next chapter,
+                        there is a first chapter waiting
+                        to be discovered.
+
+                        <br><br>
+
+                        If you haven't seen
+                        <b>My Intentions With You — Part One</b>,
+                        experience that little piece of magic first. 💜
+
+                    </p>
+
+
+                    <a id="partOneLink"
+                       href="https://drive.google.com/file/d/1s23eMkyuoLK5lnpJSc9X2dvYjDy5Tkgf/view?usp=drivesdk"
+                       target="_blank">
+
+                        <button class="magic-button">
+                            ✨ Enter Chapter I
+                        </button>
+
+                    </a>
+
+
+                    <button class="magic-button secondary-button"
+                            onclick="showChapterReveal()">
+
+                        Continue To Chapter II →
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ======================================
+                 CHAPTER II INTRO
+            ======================================= -->
+
+            <section id="chapterScreen"
+                     class="screen chapter-reveal"
+                     style="display:none;">
+
+                <div class="chapter-content">
+
+                    <div class="chapter-number">
+                        ✦ CHAPTER II ✦
+                    </div>
+
+                    <h1>
+                        ✨ My Intentions With You ✨
+                    </h1>
+
+                    <h2>
+                        The Life We Dreamed Of
+                    </h2>
+
+                    <p>
+
+                        Once upon a time...
+
+                        <br><br>
+
+                        Two hearts began writing a story.
+
+                        <br><br>
+
+                        But every beautiful story
+                        has another chapter.
+
+                        <br><br>
+
+                        So this time,
+                        instead of telling you
+                        what I intend to give you...
+
+                        <br><br>
+
+                        I want to show you
+                        the little kingdom
+                        I imagine us building together.
+
+                        <br><br>
+
+                        Fifty tiny moments.
+
+                        Fifty little dreams.
+
+                        One unwritten fairytale.
+
+                        ❤️
+
+                    </p>
+
+                    <br>
+
+                    <button class="magic-button"
+                            onclick="showMusicGate()">
+
+                        Turn The Page →
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ======================================
+                 MUSIC GATE
+            ======================================= -->
+
+            <section id="musicScreen"
+                     class="screen music-screen"
+                     style="display:none;">
+
+                <div class="music-content">
+
+                    <div class="magic-door">
+                        🚪✨
+                    </div>
+
+                    <h1>
+                        Open The Gates Of Our Fairytale
+                    </h1>
+
+                    <p>
+
+                        Somewhere beyond this little door
+                        lies a kingdom that doesn't exist yet.
+
+                        <br><br>
+
+                        A kitchen waiting for our laughter.
+
+                        A market waiting for our silly arguments.
+
+                        A home waiting for our footsteps.
+
+                        A thousand ordinary moments
+                        waiting to become magical.
+
+                        <br><br>
+
+                        And perhaps...
+                        a lifetime waiting for us.
+
+                        💜
+
+                    </p>
+
+
+                    <button class="magic-button"
+                            onclick="openFairytale()">
+
+                        🪄 Open The Gates Of Our Fairytale
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ======================================
+                 STORY SLIDESHOW
+            ======================================= -->
+
+            <section id="storyScreen"
+                     class="screen story-screen"
+                     style="display:none;">
+
+
+                <!-- Header -->
+
+                <div class="story-header">
+
+                    <div class="story-title">
+                        👑 Our Little Kingdom
+                    </div>
+
+                    <div id="progress"
+                         class="progress">
+
+                        ✨ Chapter 01 / 50 ✨
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Story Content -->
+
+                
+<!-- STORY FRAME WITH SIDE NAVIGATION -->
+<div class="story-stage">
+
+    <button id="previousButton"
+            class="side-arrow previous-arrow"
+            onclick="previousMoment()"
+            aria-label="Previous story">
+        ‹
+    </button>
+
+    <div id="imageFrame" class="image-frame">
+
+        <img id="momentImage"
+             src=""
+             alt="Our future fairytale moment">
+
+        <!-- Text appears INSIDE the image frame -->
+        <div class="moment-info">
+
+            <h2 id="momentTitle" class="moment-title"></h2>
+
+            <p id="momentMessage" class="moment-message"></p>
+
+        </div>
+
+    </div>
+
+    <button id="nextButton"
+            class="side-arrow next-arrow"
+            onclick="nextMoment()"
+            aria-label="Next story">
+        ›
+    </button>
+
+</div>
+
+
+
+                <!-- Music -->
+
+                <button id="musicControl"
+                        class="music-control"
+                        onclick="toggleMusic()">
+
+                    🎵
+
+                </button>
+
+            </section>
+
+
+
+            <!-- ======================================
+                 FINAL PAGE
+            ======================================= -->
+
+            <section id="endingScreen"
+                     class="screen ending-screen"
+                     style="display:none;">
+
+                <div class="ending-content">
+
+                    <div class="ending-stars">
+                        🌙 ✨ 👑 ✨ 🌙
+                    </div>
+
+                    <h1>
+                        And So... We Reached The Final Page
+                    </h1>
+
+                    <p>
+
+                        But perhaps...
+
+                        <br><br>
+
+                        this isn't really the ending.
+
+                        <br><br>
+
+                        Because these aren't memories yet.
+
+                        <br>
+
+                        They're little dreams waiting
+                        for their time to become real.
+
+                        ❤️
+
+                        <br><br>
+
+                        👑 Our story has many more
+                        chapters to write.
+
+                        <br><br>
+
+                        ✨ To Be Continued...
+
+                        <br><br>
+
+                        💜 Until Our Happily Ever After
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         MUSIC
+    =========================================== -->
+
+  <audio id="bgMusic" preload="auto" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+  </audio>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
